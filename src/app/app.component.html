@@ -1,0 +1,10 @@
+<p>PWA</p>
+<div>
+  <p>Single Data</p>
+  <li *ngIf="singleData?.title">{{singleData?.title}}</li>
+</div>
+<p>Bulk Data</p>
+<div *ngFor="let item of data">
+  <li>{{item.title}}</li>
+</div>
+<router-outlet></router-outlet>
